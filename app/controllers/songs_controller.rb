@@ -8,6 +8,8 @@ class SongsController < ApplicationController
       else
         @song = artist.dongs
       end
+    else
+      @songs = Song.all  
   end
 
   def show
